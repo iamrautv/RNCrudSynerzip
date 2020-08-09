@@ -4,8 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { constants } from '../../../config';
 import Home from '../Home';
 import Login from '../Login';
-import TabScreens from '../TabScreens';
-import DrawerScreens from '../DrawerScreens';
 import styles from './style';
 
 const { routes } = constants;
@@ -30,8 +28,6 @@ class Root extends Component {
         <Stack.Navigator>
           <Stack.Screen name={routes.Home} component={Home} />
           <Stack.Screen name={routes.Login} component={Login} />
-          <Stack.Screen name={routes.TabScreens} component={TabScreens} />
-          <Stack.Screen name={routes.DrawerScreens} component={DrawerScreens} />
         </Stack.Navigator>
       </View>
     );

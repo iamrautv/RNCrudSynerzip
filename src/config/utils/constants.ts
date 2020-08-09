@@ -13,17 +13,7 @@ const constants = {
   },
   routes: {
     Home: 'Home',
-    Login: 'Login',
-    TabScreens: 'TabScreens',
-    Tab1: 'Tab1',
-    Tab2: 'Tab2',
-    Tab1Screen1: 'Tab1Screen1',
-    Tab2Screen1: 'Tab2Screen1',
-    DrawerScreens: 'DrawerScreens',
-    Drawer1: 'Drawer1',
-    Drawer2: 'Drawer2',
-    Drawer1Screen1: 'Drawer1Screen1',
-    Drawer2Screen1: 'Drawer2Screen1',
+    Login: 'Login'
   },
   statusCodes: {
     success: 200,
