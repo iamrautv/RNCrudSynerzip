@@ -4,11 +4,19 @@
  * @package
  */
 import { all } from 'redux-saga/effects';
-import setAppDataSaga from './appDataSaga';
+import {
+  getUsersSaga,
+  deleteUserSaga,
+  createUserSaga,
+  editUserSaga,
+} from './usersSaga';
 
 function* rootSaga() {
   yield all([
-    setAppDataSaga()
+    getUsersSaga(),
+    deleteUserSaga(),
+    createUserSaga(),
+    editUserSaga(),
   ]);
 }
 

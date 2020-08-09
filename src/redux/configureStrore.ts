@@ -12,7 +12,7 @@ import createSagaMiddleware from 'redux-saga';
 import { createLogger } from 'redux-logger';
 import { globals } from '../config';
 import rootSaga from './sagas';
-import appDataReducer from './reducers/appDataReducer';
+import usersReducer from './reducers/usersReducer';
 
 const { LIVE } = globals;
 
@@ -29,7 +29,7 @@ const logger = createLogger({
 const configureStore = (initialState = {}) => (
   createStore(
     combineReducers({
-      appData: appDataReducer
+      users: usersReducer
     }),
     initialState,
     applyMiddleware(sagaMiddleware, logger)

@@ -111,7 +111,7 @@ const isEmptyObject = (obj: CT.MetaObj): boolean => {
 const buildHeader = (headerParams: CT.ApiHeader = {}): CT.ApiHeader => {
   let header = {
     'Accept': 'application/json',
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/x-www-form-urlencoded',
     'Cache-Control': 'no-cache',
   };
   header = { ...header, ...headerParams };

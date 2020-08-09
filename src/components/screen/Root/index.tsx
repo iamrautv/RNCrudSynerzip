@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { constants } from '../../../config';
-import Home from '../Home';
-import Login from '../Login';
+import Users from '../Users';
+import UserInfo from '../UserInfo';
+import UserCreate from '../UserCreate';
+import UserEdit from '../UserEdit';
 import styles from './style';
 
 const { routes } = constants;
@@ -26,8 +28,10 @@ class Root extends Component {
     return (
       <View style={styles.wrap}>
         <Stack.Navigator>
-          <Stack.Screen name={routes.Home} component={Home} />
-          <Stack.Screen name={routes.Login} component={Login} />
+          <Stack.Screen name={routes.Users} component={Users} />
+          <Stack.Screen name={routes.UserInfo} component={UserInfo} />
+          <Stack.Screen name={routes.UserCreate} component={UserCreate} />
+          <Stack.Screen name={routes.UserEdit} component={UserEdit} />
         </Stack.Navigator>
       </View>
     );
